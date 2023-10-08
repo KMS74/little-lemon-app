@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&family=Poppins:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  font-family: Karla, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,p {
+  font-family: 'Markazi Text', sans-serif;
+}
+
+.bg-grey {
+  background-color: #edefee;
+}
+
+.space-v-lg {
+  margin-bottom: 12rem;
+}
