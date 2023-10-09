@@ -2,6 +2,8 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Reservation } from "@/pages/reservation";
+import { ToastContainer, toast } from "react-toastify";
+import { getRandomTimes } from "@/utils/fakeAPI";
 
 type Props = {
   availableTimes: string[];
@@ -35,6 +37,7 @@ const ReservationForm: React.FC<Props> = ({
     }),
     onSubmit: (values) => {
       console.log(values);
+      toast.success("Reservation successful!");
       // add reservation to state here
       setReservations([...reservations, values]);
       // persist to local storage
@@ -73,12 +76,8 @@ const ReservationForm: React.FC<Props> = ({
 
   // set available times based on date
   const updateTimes = (date: Date) => {
-    const day = date.getDay();
-    if (day > 3) {
-      setAvailableTimes(["17:00", "18:00", "19:00", "20:00"]);
-    } else {
-      setAvailableTimes(["12:00", "13:00", "14:00", "15:00"]);
-    }
+    const randomTimes = getRandomTimes(date);
+    setAvailableTimes(randomTimes);
   };
   return (
     <form className="mb-4" onSubmit={handleSubmit}>

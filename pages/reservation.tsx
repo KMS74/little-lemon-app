@@ -1,6 +1,8 @@
 import ReservationForm from "@/components/ReservationForm";
 import Head from "next/head";
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export type Reservation = {
   date: Date | string;
@@ -43,6 +45,8 @@ const TableReservation = () => {
             reservations={reservations}
             setReservations={setReservations}
           />
+          <ToastContainer />
+
           {reservations.length > 0 && (
             <>
               <hr />
