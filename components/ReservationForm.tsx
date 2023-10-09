@@ -2,7 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Reservation } from "@/pages/reservation";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import { getRandomTimes } from "@/utils/fakeAPI";
 
 type Props = {
@@ -149,7 +149,7 @@ const ReservationForm: React.FC<Props> = ({
           {touched.occasion && errors.occasion ? errors.occasion : null}
         </small>
       </div>
-      <button className="btn btn-secondary btn-lg" type="submit">
+      <button className="btn btn-secondary" type="submit">
         Reserve Table
       </button>
     </form>

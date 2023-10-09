@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Little Lemon</title>
         <meta name="description" content="Little Lemon Restaurant" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/assets/favicon-32x32.png" />
         <link rel="icon" href="/assets/logo.svg" />
         <meta property="og:title" content="Little Lemon" />
         <meta property="og:description" content="Little Lemon Restaurant" />

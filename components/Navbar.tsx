@@ -47,7 +47,7 @@ const Navbar = () => {
                 Order Online
               </Link>
             </li>
-            <li className="nav-item  fs-5">
+            <li className="nav-item ms-lg-4 fs-5">
               <Link
                 href="/login"
                 className="btn btn-outline-primary text-uppercase"

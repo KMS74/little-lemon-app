@@ -18,7 +18,7 @@ const MenuCard = ({ menu }: { menu: Menu }) => {
             <h3>{menu.title}</h3>
             <h4 className="text-info">${menu.price}</h4>
           </div>
-          <p className="card-text text-primary text-left fs-5">
+          <p className="card-text text-primary text-left fs-4">
             {menu.description}
           </p>
           <div className="d-flex gap-4">

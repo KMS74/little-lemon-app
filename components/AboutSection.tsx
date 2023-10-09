@@ -12,7 +12,15 @@ const AboutSection = () => {
             </h1>
             <h6 className="display-6">Chicago</h6>
           </div>
-          <p className="fs-5">
+          <p className="fs-5 lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sequi
+            nobis unde, perferendis qui esse, eos quae, cupiditate molestias a
+            dolorum excepturi odit ut eligendi sunt! In, aspernatur. Dolore,
+            dolor! nobis unde, perferendis qui esse, eos quae, cupiditate
+            molestias a dolorum excepturi odit ut eligendi sunt! In, aspernatur.
+            Dolore, dolor!
+          </p>
+          <p className="fs-5 lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sequi
             nobis unde, perferendis qui esse, eos quae, cupiditate molestias a
             dolorum excepturi odit ut eligendi sunt! In, aspernatur. Dolore,

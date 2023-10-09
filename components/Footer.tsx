@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -10,67 +11,56 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <Logo />
-                <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
+                <p className="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  sequi nobis unde, perferendis qui esse, eos quae, cupiditate
                 </p>
               </div>
 
               <hr className="w-100 clearfix d-md-none" />
 
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h5 className="text-uppercase mb-4 fw-bold">
-                  Products
-                </h5>
-                <p>
-                  <a className="text-white text-decoration-none">MDBootstrap</a>
-                </p>
-                <p>
-                  <a className="text-white text-decoration-none">MDWordPress</a>
-                </p>
-                <p>
-                  <a className="text-white text-decoration-none">BrandFlow</a>
-                </p>
-                <p>
-                  <a className="text-white text-decoration-none">
-                    Bootstrap Angular
-                  </a>
-                </p>
-              </div>
+                <h5 className="text-uppercase mb-4 ">Sitemap</h5>
 
-              <hr className="w-100 clearfix d-md-none" />
-
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h5 className="text-uppercase mb-4 fw-bold">
-                  Useful links
-                </h5>
-                <p>
-                  <a className="text-white text-decoration-none">
-                    Your Account
-                  </a>
-                </p>
-                <p>
-                  <a className="text-white text-decoration-none">
-                    Become an Affiliate
-                  </a>
-                </p>
-                <p>
-                  <a className="text-white text-decoration-none">
-                    Shipping Rates
-                  </a>
-                </p>
-                <p>
-                  <a className="text-white text-decoration-none">Help</a>
-                </p>
+                <ul className="list-unstyled">
+                  <li className="nav-item">
+                    <Link className="nav-link text-uppercase" href="/">
+                      Home
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link text-uppercase" href="/about">
+                      About
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link text-uppercase" href="/menu">
+                      Menu
+                    </Link>
+                  </li>
+                  <li className="nav-item ">
+                    <Link
+                      className="nav-link text-uppercase"
+                      href="/reservation"
+                    >
+                      Reservation
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link text-uppercase"
+                      href="/order-online"
+                    >
+                      Order Online
+                    </Link>
+                  </li>
+                </ul>
               </div>
 
               <hr className="w-100 clearfix d-md-none" />
 
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 fw-bold">
-                  Contact
-                </h6>
+                <h6 className="text-uppercase mb-4 fw-bold">Contact</h6>
                 <p className="d-flex align-items-center gap-2">
                   <i className="bi bi-house "></i>
                   <span>New York, NY 10012, US</span>
@@ -94,8 +84,8 @@ const Footer = () => {
             <div className="row d-flex align-items-center">
               <div className="col-md-7 col-lg-8 text-center text-md-start">
                 <div className="p-3 d-flex gap-2 align-items-center">
-                  © 2023 Copyright
-                  <a className="text-white text-decoration-none" href="">
+                  © {new Date().getFullYear()} Copyright
+                  <a className="text-white text-decoration-none">
                     little-lemon-restaurant.com
                   </a>
                 </div>
